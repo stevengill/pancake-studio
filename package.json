@@ -1,5 +1,5 @@
 {
-  "name": "json-flattener",
+  "name": "Pancake Studio",
   "version": "1.0.0",
   "description": "A server that receives json payloads, flattens the keys and sends this new payload to passed in url",
   "main": "server.js",
@@ -10,13 +10,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stevengill/json-flattener.git"
+    "url": "git+https://github.com/stevengill/pancake-studio.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/stevengill/json-flattener/issues"
+    "url": "https://github.com/stevengill/pancake-studio/issues"
   },
-  "homepage": "https://github.com/stevengill/json-flattener#readme",
+  "homepage": "https://pancake.studio/",
   "dependencies": {
     "axios": "^0.21.0",
     "body-parser": "^1.19.0",

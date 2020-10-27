@@ -1,6 +1,9 @@
 {
-    "name": "json formatter",
+    "name": "Pancake Studio",
     "description": "Flattens incoming json payloads and sends to a slack workflow builder webhook",
-    "repository": "https://github.com/stevengill/json-flattener",
-    "keywords": ["node", "express", "json"]
+    "repository": "https://github.com/stevengill/pancake-studio",
+    "keywords": ["node", "express", "json"],
+    "env": {
+        "NODE_ENV": "production"
+    }
   }
