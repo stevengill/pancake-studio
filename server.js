@@ -1,7 +1,8 @@
 const express = require('express');
 const axios = require('axios');
-var bodyParser = require('body-parser');
-var flatten = require('flat');
+const bodyParser = require('body-parser');
+const flatten = require('flat');
+const path = require('path');
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -11,6 +12,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.use(bodyParser.json());
+app.use(express.static('public'))
 
 app.post('/workflows/*', (req, res) => {
     // res.send('hello world');
@@ -33,7 +35,8 @@ app.post('/workflows/*', (req, res) => {
 app.get('/', (req, res) => {
     // this route should ask you to post your slack webhook urls and give you the webhook to supply to github 
     // (Essentially changes hooks.slack.com to our servers path)
-    res.send('hello')
+    res.sendFile(path.join(__dirname+'/public/index.html'));
+    console.log(req);
 })
 
 app.listen(port, () => {

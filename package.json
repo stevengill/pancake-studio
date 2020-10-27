@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "watch": "npx nodemon --watch server.js --watch public --exec npm run start"
   },
   "repository": {
     "type": "git",

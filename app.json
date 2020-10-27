@@ -1,0 +1,6 @@
+{
+    "name": "json formatter",
+    "description": "Flattens incoming json payloads and sends to a slack workflow builder webhook",
+    "repository": "https://github.com/stevengill/json-flattener",
+    "keywords": ["node", "express", "json"]
+  }
