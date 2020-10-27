@@ -2,9 +2,10 @@
   "name": "json-flattener",
   "version": "1.0.0",
   "description": "A server that receives json payloads, flattens the keys and sends this new payload to passed in url",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
