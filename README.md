@@ -1,5 +1,7 @@
 # json-flattener
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/stevengill/json-flattener/tree/main)
+
 A server that receives json payloads, flattens the keys and sends this new payload to a slack webhook
 
 ## Learnings
