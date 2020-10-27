@@ -24,7 +24,8 @@ app.post('/workflows/*', (req, res) => {
         flatPayload[key] = '' + flatPayload[key];
     })
 
-    // console.log(flatPayload)
+    console.log(flatPayload);
+    console.log(req.path);
 
     axios.post(`https://hooks.slack.com${req.path}`, flatPayload)
 })
