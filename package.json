@@ -1,0 +1,22 @@
+{
+  "name": "json-flattener",
+  "version": "1.0.0",
+  "description": "A server that receives json payloads, flattens the keys and sends this new payload to passed in url",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevengill/json-flattener.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stevengill/json-flattener/issues"
+  },
+  "homepage": "https://github.com/stevengill/json-flattener#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
