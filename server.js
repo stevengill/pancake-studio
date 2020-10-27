@@ -14,15 +14,15 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 // Redirect http calls to https
 // comment this out if you aren't using SSL
-app.use(function(req, res, next) {
-    if (!req.secure && process.env.NODE_ENV === 'production') {
-        // request was via http, so redirect to https
-        res.redirect('https://' + req.headers.host + req.url);
-    } else {
-        // request was via https or on dev instance, so do no special handling
-        next();
-    }
-});
+// app.use(function(req, res, next) {
+//     if (!req.secure && process.env.NODE_ENV === 'production') {
+//         // request was via http, so redirect to https
+//         res.redirect('https://' + req.headers.host + req.url);
+//     } else {
+//         // request was via https or on dev instance, so do no special handling
+//         next();
+//     }
+// });
 app.use(express.static('public'))
 
 
