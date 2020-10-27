@@ -1,5 +1,5 @@
 {
-  "name": "Pancake Studio",
+  "name": "pancake-studio",
   "version": "1.0.0",
   "description": "A server that receives json payloads, flattens the keys and sends this new payload to passed in url",
   "main": "server.js",
