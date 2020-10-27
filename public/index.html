@@ -7,8 +7,31 @@
         <div id="hero">
             <h1>Pancake Studio</h1>
             <h2>Flatten webhook JSON to work with Workflow Builder in Slack.</div>
+
+            <div class="input-area">
+                <input id="urlbox" type="url" placeholder="slack workflow builder webhook url">
+                <div onclick="convertURL()">Convert</div> 
+            </div>
+
+            <div class="group-4">
+                <div class="frame-2">https://hooks.slack.com/workflows/****</div>
+                <div class="arrow-1">➜</div>
+                <div class="frame-1">https://pancake.studio/workflows/****</div>
+            </div>
         </div>
-        <input id="url box" type="url" placeholder="slack workflow builder webhook url" width="500px"> 
-        <div>hi</div>
+
+        <div class="below-fold">
+            <h2>Download & import example workflows to try it out</h2>
+            <div class="workflow-box">
+                <h1>GitHub Issues</h1>
+            </div>
+            <div class="workflow-box">
+                <h1>GitHub Issue Comments</h1>
+            </div>
+            <div class="workflow-box">
+                <h1>GitHub Repo Stars</h1>
+            </div>
+        </div>
+        <script src="index.js"></script>
     </body>
 </html>
