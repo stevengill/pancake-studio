@@ -99,6 +99,8 @@ body {
   line-height: 68px;
   text-align: center;
   color: #FFFFFF;
+
+  user-select: none;
 }
 
 .url-box .button:hover {
