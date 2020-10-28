@@ -12,6 +12,7 @@ function convertURL() {
 
     if (!valid) {
         console.error('URL provided was not a valid hook.slack.com/workflows url')
+        urlBox.style.backgroundColor = 'red';
         return
     }
 
@@ -25,8 +26,6 @@ function convertURL() {
 
     // update second input box with new url
     document.getElementById('urlbox-pancake-url').value = url.href
-    
-
 
 }
 
