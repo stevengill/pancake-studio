@@ -173,3 +173,42 @@ body {
 .hide {
   display: none;
 }
+
+/* Flip box */
+.flip-box {
+  background-color: transparent;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* We will flip this container */
+.flip-box-inner {
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Flip on hover */
+/* .flip-box:hover .flip-box-inner {
+  transform: rotateX(-180deg);
+} */
+.flip-box .flip-box-inner.flip {
+  transform: rotateX(-180deg);
+}
+
+/* Make the backside invisible for both front and back boxes*/
+.flip-box-front, .flip-box-back {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; /* Safari */
+}
+
+/* Optional style the front side */
+.flip-box-front {
+}
+
+/* Flip the back in prepation for the animation */
+.flip-box-back {
+  position: absolute;
+  top: -30px; /* Hack to offset the 30px margin of the flex-row */
+  left: 0px;
+  transform: rotateX(-180deg);
+}

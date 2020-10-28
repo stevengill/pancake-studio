@@ -1,6 +1,7 @@
 function convertURL() {
-    document.querySelector('#urlbox').classList.toggle('hide')
-    document.querySelector('#urlbox-pancake-url').classList.toggle('hide')
+    document.querySelector('#url-box-flip').classList.toggle('flip')
+    // document.querySelector('#urlbox').classList.toggle('hide')
+    // document.querySelector('#urlbox-pancake-url').classList.toggle('hide')
 
     const input = document.getElementById('urlbox').value;
     if (input === '') {

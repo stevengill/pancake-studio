@@ -16,10 +16,34 @@
             </div>
 
             <div class="flex-row">
-                <div class="url-box flex-row">
-                    <input id="urlbox" type="url" placeholder="https://hooks.slack.com/workflows/****">
-                    <input id="urlbox-pancake-url" class="hide" type="url" placeholder="https://pancake.studio/workflows/****" disabled />
-                    <div onclick="convertURL()" class="button">Convert</div> 
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h2>This is the front</h2>
+                        </div>
+                        <div class="flip-box-back">
+                            <h2>This is the back</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-row">
+                <div class="flip-box">
+                    <div id="url-box-flip" class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <div class="url-box flex-row">
+                                <input id="urlbox" type="url" placeholder="https://hooks.slack.com/workflows/****">
+                                <div onclick="convertURL()" class="button">Convert</div> 
+                            </div>
+                        </div>
+                        <div class="flip-box-back">
+                            <div class="url-box flex-row">
+                                <input id="urlbox-pancake-url" type="url" placeholder="https://pancake.studio/workflows/****" disabled />
+                                <div onclick="convertURL()" class="button">Convert</div> 
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
