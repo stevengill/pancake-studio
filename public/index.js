@@ -34,13 +34,22 @@ function goBack() {
 }
 
 function copy() {
-    const input = document.getElementById('urlbox-pancake-url').value
-    navigator.clipboard.writeText(input).then(function() {
+    const input = document.getElementById('urlbox-pancake-url');
+    const inputValue = input.value
+    navigator.clipboard.writeText(inputValue).then(function() {
         // clipboard successfully set
         console.log('url copied to clipboard')
+        input.classList.add('success');
+        setTimeout(function() {
+            input.classList.remove('success');
+        }, 100);
       }, function() {
         // clipboard write failed
         console.log('url failed to copy')
+        input.classList.add('error');
+        setTimeout(function() {
+            input.classList.remove('error');
+        }, 100);
       });
 }
 

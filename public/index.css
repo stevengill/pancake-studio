@@ -84,6 +84,11 @@ body {
   transition: 0.1s ease-out all;
 }
 
+.url-box input.success {
+  background-color: #c0e5fda8 !important;
+  transition: 0s ease-out all;
+}
+
 .url-box input:disabled {
   background-color: transparent;
 }
