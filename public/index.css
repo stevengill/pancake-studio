@@ -12,6 +12,19 @@ body {
   background: #F4EDE4;
 }
 
+.section.footer {
+  font-size: 16px;
+  padding-bottom: 0px;
+}
+
+.section.footer a {
+  color: #000000;
+}
+
+.section.footer img {
+  height: 14px;
+}
+
 .section.hero .logo {
   height: 76px;
   width: 76px;
