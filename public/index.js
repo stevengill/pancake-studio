@@ -46,7 +46,15 @@ function copy() {
 
 document.addEventListener("DOMContentLoaded", function() {
     const urlBox = document.getElementById('urlbox');
+
     urlBox.addEventListener('input', function(event) {
         urlBox.classList.remove('error');
+    });
+
+    // On enter, convert!
+    urlBox.addEventListener("keyup", function(event) {
+        if (event.key === "Enter") {
+            return convertURL();
+        }
     });
 });
