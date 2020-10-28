@@ -1,8 +1,33 @@
-# json-flattener
+# Pancake Studio
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/stevengill/json-flattener/tree/main)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/stevengill/pancake-studio/tree/main)
 
-A server that receives json payloads, flattens the keys, and sends this new payload to a webhook that triggers a workflow in Slack.
+A server that receives json payloads, flattens the keys (brings all keys to top level), and sends this new payload to a webhook that triggers a workflow in Slack.
+
+## Flattend Payload
+
+Under the hood, we are using the [`flat` npm package](https://www.npmjs.com/package/flat).
+
+```
+var flatten = require('flat')
+ 
+const flatJson = flatten({
+    key1: {
+        keyA: 'valueI'
+    },
+    key2: {
+        keyB: 'valueII'
+    },
+    key3: { a: { b: { c: 2 } } }
+})
+
+console.log(flatJson)
+// {
+//   'key1.keyA': 'valueI',
+//   'key2.keyB': 'valueII',
+//   'key3.a.b.c': 2
+// }
+```
 
 ## Learnings
 
