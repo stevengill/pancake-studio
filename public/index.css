@@ -150,52 +150,6 @@ body {
   background-position: center center;
 }
 
-#hero {
-  /* position: absolute; */
-  width: 100%;
-  height: 384px;
-  left: 0px;
-  top: 0px;
-  background: #F4EDE4;
-}
-
-#hero h1 {
-  position: absolute;
-  width: 217px;
-  height: 38px;
-  left: 86px;
-  top: 3px;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 37px;
-  /* identical to box height */
-
-  text-align: center;
-  letter-spacing: -0.5px;
-
-  color: #000000;
-}
-
-#hero h2 {
-  position: absolute;
-  width: 721px;
-  height: 26px;
-  left: 359px;
-  top: 114px;
-
-  font-family: Roboto Mono;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 26px;
-  text-align: center;
-
-  color: #000000;
-}
-
 .workflow-box {
   width: 220px;
   height: 140px;
