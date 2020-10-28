@@ -13,12 +13,14 @@ body {
 }
 
 .section.hero .logo {
-  height: 45px;
+  height: 76px;
   width: 76px;
-  background: url(assets/logo.svg) no-repeat top left;
-  background-size: 100% 100%; /*contain;*/
+  /* background: url(assets/logo.svg) no-repeat top left; */
+  background: url(assets/pancake-emoji.png) no-repeat top left;
+  background-size: 90% 90%; /*contain;*/
   background-position: center center;
   padding: 0px 10px;
+  margin-top: -20px;
 }
 .section.hero h1 {
   color: #000000;
