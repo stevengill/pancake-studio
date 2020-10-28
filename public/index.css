@@ -175,6 +175,13 @@ body {
   background-size: 100% 100%; /*contain;*/
   background-position: center center;
 }
+.workflow-box .sheets-icon {
+  height: 32px;
+  width: 32px;
+  background: url(assets/sheets.svg) no-repeat top left;
+  background-size: 100% 100%; /*contain;*/
+  background-position: center center;
+}
 
 .workflow-box {
   width: 220px;
