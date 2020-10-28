@@ -108,13 +108,6 @@ body {
   cursor: pointer;
 }
 
-.url-box a {
-  color: #1264A3;
-}
-.url-box a:hover {
-  color: #1264A3;
-}
-
 .url-box .url-box-copy, .url-box .url-box-back {
   font-style: normal;
   font-weight: normal;
@@ -122,6 +115,7 @@ body {
   line-height: 68px; /* Same as parent height to center text... hack */
   color: #1264A3;
   padding-right: 30px;
+  cursor: pointer;
 }
 
 .url-box-example {
