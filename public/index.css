@@ -118,6 +118,11 @@ body {
   cursor: pointer;
 }
 
+.url-box .url-box-copy:hover,
+.url-box .url-box-back:hover {
+  color: #0e5084;
+}
+
 .url-box-example {
   margin: 10px;
   width: 321px;
