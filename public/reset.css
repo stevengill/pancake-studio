@@ -49,3 +49,10 @@ table {
 a:link {
  text-decoration: none;
 }
+/* Input highlighting */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}

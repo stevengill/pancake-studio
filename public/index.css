@@ -61,6 +61,37 @@ body {
   border-radius: 12px;
   width: 700px;
   height: 68px;
+  overflow: hidden;
+}
+
+.url-box input {
+  flex-grow: 1;
+  border: 0;
+  padding: 0 24px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+  color: #868686;
+}
+
+.url-box .button {
+  width: 152px;
+  height: 68px;
+  background-image: linear-gradient(180deg, rgba(74, 21, 75, 0.9) 0%, #4A154B 100%);
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 68px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.url-box .button:hover {
+  background-image: linear-gradient(180deg, rgba(74, 21, 75, 0.8) 0%, #601b61 100%);
+  cursor: pointer;
 }
 
 .url-box-example {
