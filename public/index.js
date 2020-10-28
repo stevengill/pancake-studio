@@ -12,7 +12,7 @@ function convertURL() {
 
     if (!valid) {
         console.error('URL provided was not a valid hook.slack.com/workflows url')
-        urlBox.style.backgroundColor = 'red';
+        urlBox.classList.add('error');
         return
     }
 
@@ -32,3 +32,10 @@ function convertURL() {
 function goBack() {
     document.querySelector('#url-box-flip').classList.toggle('flip')
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    const urlBox = document.getElementById('urlbox');
+    urlBox.addEventListener('input', function(event) {
+        urlBox.classList.remove('error');
+    });
+});
