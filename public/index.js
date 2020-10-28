@@ -33,6 +33,17 @@ function goBack() {
     document.querySelector('#url-box-flip').classList.toggle('flip')
 }
 
+function copy() {
+    const input = document.getElementById('urlbox-pancake-url').value
+    navigator.clipboard.writeText(input).then(function() {
+        // clipboard successfully set
+        console.log('url copied to clipboard')
+      }, function() {
+        // clipboard write failed
+        console.log('url failed to copy')
+      });
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     const urlBox = document.getElementById('urlbox');
     urlBox.addEventListener('input', function(event) {
