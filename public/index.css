@@ -78,6 +78,10 @@ body {
   color: #868686;
 }
 
+.url-box input:disabled {
+  background-color: transparent;
+}
+
 .url-box .button {
   width: 152px;
   height: 68px;
@@ -94,6 +98,22 @@ body {
 .url-box .button:hover {
   background-image: linear-gradient(180deg, rgba(74, 21, 75, 0.8) 0%, #601b61 100%);
   cursor: pointer;
+}
+
+.url-box a {
+  color: #1264A3;
+}
+.url-box a:hover {
+  color: #1264A3;
+}
+
+.url-box .url-box-copy, .url-box .url-box-back {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 68px; /* Same as parent height to center text... hack */
+  color: #1264A3;
+  padding-right: 30px;
 }
 
 .url-box-example {

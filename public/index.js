@@ -29,3 +29,7 @@ function convertURL() {
 
 
 }
+
+function goBack() {
+    document.querySelector('#url-box-flip').classList.toggle('flip')
+}
