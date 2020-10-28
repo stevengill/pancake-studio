@@ -88,8 +88,13 @@ body {
   font-weight: normal;
   font-size: 20px;
   line-height: 26px;
-  color: #868686;
+  color: #000000;
   transition: 2s ease-out all;
+}
+
+.url-box input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #868686;
+  opacity: 1; /* Firefox */
 }
 
 .url-box input.error {
