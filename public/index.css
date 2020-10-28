@@ -76,11 +76,12 @@ body {
   font-size: 20px;
   line-height: 26px;
   color: #868686;
-  transition: 2s linear all;
+  transition: 2s ease-out all;
 }
 
 .url-box input.error {
   background-color: #fdc0cea8;
+  transition: 0.1s ease-out all;
 }
 
 .url-box input:disabled {
