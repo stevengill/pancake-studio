@@ -169,3 +169,7 @@ body {
   text-align: center;
   color: #000000;
 }
+
+.hide {
+  display: none;
+}
