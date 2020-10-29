@@ -96,6 +96,7 @@ body {
   line-height: 26px;
   color: #000000;
   transition: 2s ease-out all;
+  text-overflow: ellipsis;
 }
 
 .url-box input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
