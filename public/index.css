@@ -53,6 +53,8 @@ body {
   line-height: 26px;
 }
 
+.section.hero h2 a,
+.section.hero h2 a:hover,
 .section.hero h2 a:visited {
   color: #000000;
 }
