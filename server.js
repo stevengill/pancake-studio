@@ -29,7 +29,6 @@ app.use(express.static('public'))
 
 
 app.post('/workflows/*', (req, res) => {
-    // res.send('hello world');
     res.send('ok');
     const payload = req.body;
     const flatPayload = flatten(payload);
@@ -39,9 +38,6 @@ app.post('/workflows/*', (req, res) => {
     Object.keys(flatPayload).forEach((key) => {
         flatPayload[key] = '' + flatPayload[key];
     })
-
-    // console.log(flatPayload);
-    // console.log(req.path);
 
     axios.post(`https://hooks.slack.com${req.path}`, flatPayload)
 })
