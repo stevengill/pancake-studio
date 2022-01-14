@@ -1,5 +1,7 @@
 # Pancake Studio
 
+[![amplifybutton](https://oneclick.amplifyapp.com/button.svg)](https://console.aws.amazon.com/amplify/home#/deploy?repo=https://https://github.com/philip-ellis-sp/pancake-studio)
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/stevengill/pancake-studio/tree/main)
 
 A server that receives json payloads, flattens the keys (brings all keys to top level), and sends this new payload to a webhook that triggers a workflow in Slack.
