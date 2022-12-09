@@ -28,7 +28,7 @@ app.use(sslRedirect());
 app.use(express.static('public'))
 
 
-app.post('/workflows/*', (req, res) => {
+app.post(['/workflows/*', '/triggers/*'], (req, res) => {
     res.send('ok');
     const payload = req.body;
     const flatPayload = flatten(payload);
@@ -43,7 +43,7 @@ app.post('/workflows/*', (req, res) => {
 })
 
 app.get('/', (req, res) => {
-    // this route should ask you to post your slack webhook urls and give you the webhook to supply to github 
+    // this route should ask you to post your slack webhook urls and give you the webhook to supply to github
     // (Essentially changes hooks.slack.com to our servers path)
     res.sendFile(path.join(__dirname+'/public/index.html'));
     console.log(req);

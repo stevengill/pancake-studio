@@ -5,8 +5,12 @@ function convertURL() {
         input = urlBox.placeholder
     }
 
-    // check for valid slack url input
-    const regex = /hooks.slack.com\/workflows/g;
+    // validate the slack url:
+    // 1. hooks.slack.com/workflows/... - Workflow Builder 1.0 Webhooks
+    // 2. hooks.slack.com/triggers/.... - Next Generation Webhook Triggers
+    //
+    // regex playground: https://rubular.com/r/7Ml72BmnaYQCxk
+    const regex = /hooks.slack.com\/(workflows|triggers)/g;
     const valid = input.match(regex)
     console.log(valid)
 
