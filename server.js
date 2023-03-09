@@ -12,7 +12,13 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 
-app.use(bodyParser.json());
+app.use(express.json({
+    type: [
+        'application/json',
+        'text/plain'
+    ]
+}));
+
 app.use(sslRedirect());
 // Redirect http calls to https
 // comment this out if you aren't using SSL
