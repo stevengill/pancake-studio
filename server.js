@@ -37,7 +37,8 @@ app.use(express.static('public'))
 app.post(['/workflows/*', '/triggers/*'], (req, res) => {
     res.send('ok');
     const payload = req.body;
-    const flatPayload = flatten(payload);
+    // Slack restricts variable keys to "a combination of letters, numbers, hyphens, and underscores."
+    const flatPayload = flatten(payload, { delimiter: '_' });
 
     // workflow builder requires values to be strings
     // iterate over every value and convert it to string
