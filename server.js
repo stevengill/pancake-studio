@@ -37,8 +37,13 @@ app.use(express.static('public'))
 app.post(['/workflows/*', '/triggers/*'], (req, res) => {
     res.send('ok');
     const payload = req.body;
-    // Slack restricts variable keys to "a combination of letters, numbers, hyphens, and underscores."
-    const flatPayload = flatten(payload, { delimiter: '_' });
+     // Slack's new Workflow builder restricts variable keys to
+    // "a combination of letters, numbers, hyphens, and underscores."
+    //
+    // Maintain backwards compatibility with legacy workflow builder
+    // where a '.' is supported to delimit flattened payloads
+    const delimiter = req.path.includes('/triggers/') ? '_' : '.';
+    const flatPayload = flatten(payload, { delimiter: delimiter });
 
     // workflow builder requires values to be strings
     // iterate over every value and convert it to string
