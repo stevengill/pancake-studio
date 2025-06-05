@@ -31,7 +31,7 @@ app.use(sslRedirect());
 //         next();
 //     }
 // });
-app.use(express.static('public'))
+app.use(express.static('public'));
 
 
 app.post(['/workflows/*', '/triggers/*'], (req, res) => {
